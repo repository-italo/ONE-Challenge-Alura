@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Challenge ONE</title>
+</head>
+<body>
+   <input id="textEntrada">
+   <p id="textEncript"></p>
+   <button onclick="criptografar()">Criptografar</button>
+   <button onclick="descriptografar()">Descriptografar</button>
+</body>
+<script>
+
+   function criptografar(){
+      var textEntrada = document.querySelector("#textEntrada").value;
+      var temp = "";
+      for(var i = 0; i < textEntrada.length; i++){
+          temp += cript(textEntrada[i]);
+          
+      }
+        document.getElementById("textEncript").innerHTML = "";
+        document.getElementById("textEncript").innerHTML = temp;
+   }
+
+      function descriptografar(){
+        var textEntrada = document.querySelector("#textEntrada").value;
+        var temp = "";
+        for(var i = 0; i < textEntrada.length; i++){
+     
+            temp = descript(textEntrada);
+        }
+          document.getElementById("textEncript").innerHTML = "";
+          document.getElementById("textEncript").innerHTML = temp;
+      }
+
+      
+function descript(text){
+            return text
+            .replaceAll("enter", "e")
+            .replaceAll("imes", "i")
+            .replaceAll("ai", "a")
+            .replaceAll("ober", "o")
+            .replaceAll("ufat", "u");
+      }
+
+      function cript(texto){
+            switch(texto){
+               case "e":
+                  return "enter";
+                  break;
+               case "i":
+                  return "imes";
+                  break;
+               case "a":
+                  return "ai";
+                  break;
+               case "o":
+                  return "ober";
+                  break;
+               case "u":
+                  return "ufat";
+                  break;
+               default:
+                  return texto;
+            }
+         }
+            
+   
+
+</script>
+</html>
