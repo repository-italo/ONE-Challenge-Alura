@@ -4,7 +4,7 @@ body{
 }
 nav{
    background: linear-gradient(rgb(224, 232, 255), rgb(255, 232, 255));
-   padding: 0 0 20px 0;
+   padding: 0 0 15px 0;
 }
 main{
    max-width: 1400px;
@@ -23,7 +23,7 @@ section{
 }
 .img-logo{
    width: 100px;
-   margin: 20px 0 20px 20px;
+   margin: 20px 0 15px 25px;
 }
 .codigo-box{
    margin: 100px 50px 50px 50px;
@@ -78,12 +78,12 @@ button:active{
 
 .mensagem{
    background-color: rgba(243, 245, 252, 1);
-   border: solid 2px rgb(202, 69, 69);
+   border: solid 2px rgb(0, 0, 0);
    padding: 10px 20px;
    border-radius: 24px;
    transition: 300ms;
-   max-width: 380px;
-   min-height: 400px;
+   max-width: 340px;
+   min-height: 440px;
 }
 .botao-criptografia{
    font-size: 15px;
@@ -93,7 +93,6 @@ button:active{
    border-radius: 24px;
    margin:10px auto;
    padding: 20px 40px;
-   gap:8px;
    border: none;
    cursor: pointer;
 
@@ -110,12 +109,13 @@ button:active{
    border: 1px rgba(10, 56, 113, 1) solid ;
    cursor: pointer;
 }
-.copiar-texto{
+#copiar-texto{
    font-size: 15px;
    display: flex;
    align-items: center;
    justify-content: center;
-
+   position: relative;
+   top: 300px;
    color: rgba(10, 56, 113, 1);   
    background-color: rgba(216, 223, 232, 1);
    border-radius: 24px;
@@ -132,6 +132,6 @@ footer{
    bottom: 0;
    text-align: center;
    padding: 30px 0;
-   margin: 100px 0 0 0;
+   margin: 50px 0 0 0;
    background: linear-gradient( rgb(224, 232, 255),  rgb(255, 232, 255));
 }

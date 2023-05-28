@@ -1,32 +1,54 @@
 
 var mensagemInput = document.querySelector("#textEntrada");
+   mensagemInput.focus();
+var botao_copia = document.getElementById("copiar-texto");
+botao_copia.style.display = "none";
+const mostraBotao = () => {botao_copia.style.display = "flex";}
+var caracter = /^[a-z\s]+$/;
+const isLowerCase = (string) => caracter.test(string);
 
-const isLowerCase = (string) => /^[A-Z]*$^/^/ [0-9]*$/.test(string)
-var botao_descript = document.querySelector(".botao-descriptografia")
+var botao_descript = document.querySelector(".botao-descriptografia");
+
 var botao_cript = document.querySelector(".botao-criptografia");
+var flag = 0;
    botao_cript.addEventListener("click", ()=>{
       for(var i = 0; i < mensagemInput.value.length; i++){
-         if(isLowerCase(mensagemInput.value[i]) == true ){
-           criptografar();
-
-         }else{
-               document.getElementById("aviso").style.color = "red";
-         }
+         if(isLowerCase(mensagemInput.value[i]) === false ){
+      flag = 1; 
+      }}
+      if(flag === 0){
+         criptografar();
+         mostraBotao();
+   
+      }else{
+         document.getElementById("aviso").style.color = "red";   
+         flag = 0;     
       }
    });
 
    botao_descript.addEventListener("click", ()=>{
       for(var i = 0; i < mensagemInput.value.length; i++){
-         if(isLowerCase(mensagemInput.value[i]) == true ){
-               descriptografar();  
-
-         }else{
-               document.getElementById("aviso").style.color = "red";
-         }
+         if(isLowerCase(mensagemInput.value[i]) === false ){
+      flag = 1; 
+      }}
+      if(flag === 0){
+         descriptografar();
+         mostraBotao();
+      }else{
+         document.getElementById("aviso").style.color = "red";        
+         flag = 0;  
       }
    } )
 
-
+   botao_copia.addEventListener("click", ()=>{
+      if(document.getElementById("textEncript") == ""){
+         alert("Primeiro insira a mensagem no campo");
+      }else{
+      navigator.clipboard.writeText(document.getElementById("textEncript").innerText)
+      .then(()=>{
+         console.log("O texto foi copiado");
+      })}
+   })
       
    
 
@@ -41,6 +63,7 @@ function criptografar(){
      document.getElementById("textEncript").innerHTML = temp;
      
 }
+
 function semImagem(){
    document.getElementById("img-semtexto").style.display = "none";
 }
