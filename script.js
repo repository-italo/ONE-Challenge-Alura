@@ -22,7 +22,7 @@ var flag = 0;
    
       }else{
          document.getElementById("aviso").style.color = "red";   
-         flag = 0;     
+         flag = 0;
       }
    });
 
