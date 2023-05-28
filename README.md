@@ -6,7 +6,7 @@ Eu me chamo Italo e fiz esse encriptador de mensagens como desafio do curso ONE 
 
 ---
 ## Funcionamento do Software
-As "chaves" de criptografia que utilizaremos são:
+As "chaves" de criptografia que utilizaremos são:<br>
 A letra "e" é convertida para "enter"<br>
 A letra "i" é convertida para "imes"<br>
 A letra "a" é convertida para "ai"<br>
