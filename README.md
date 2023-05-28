@@ -2,7 +2,7 @@
 # Challenge ONE | Lógica de Programação | Decodificador de texto
 
 ----
-Sou Italo e fiz esse encriptador de mensagens como desafio do curso ONE - Oracle Next Education - promovido pela Oracle e Alura. Aprendi e me diverti bastante na prática.
+Eu me chamo Italo e fiz esse encriptador de mensagens como desafio do curso ONE - Oracle Next Education - promovido pela Oracle e Alura. Aprendi e me diverti bastante na prática.
 
 ---
 ## Funcionamento do Software
