@@ -1,0 +1,137 @@
+body{
+   font-family: 'Outfit', sans-serif;
+
+}
+nav{
+   background: linear-gradient(rgb(224, 232, 255), rgb(255, 232, 255));
+   padding: 0 0 20px 0;
+}
+main{
+   max-width: 1400px;
+   margin: 0 auto;
+}
+
+section{
+   display: inline-block;
+   vertical-align: bottom;
+}
+.resposta-box{
+   position: relative;
+   left: 500px;
+   margin-top: 20px;
+
+}
+.img-logo{
+   width: 100px;
+   margin: 20px 0 20px 20px;
+}
+.codigo-box{
+   margin: 100px 50px 50px 50px;
+}
+.titulo-header{
+   font-size: 50px;
+   position: absolute;
+   color: gold;
+   box-shadow: solid;
+   text-shadow: 1px rgb(202, 69, 69);
+   top: 60px;
+   left: 300px;
+   text-decoration: underline;
+}
+#textEntrada{
+   border: none;
+   background: linear-gradient(rgb(224, 232, 255), rgb(255, 232, 255));
+   font-size: 20px;
+   margin: 100px 50px 100px 0;
+   width: 300px;
+   padding: 15px;
+}
+#textEntrada:focus{
+   border: none;
+}
+#img-semtexto{
+   width: 300px;
+   justify-content: center;
+   border: solid 1px rgb(238, 178, 219);
+   border-radius: 24px;
+
+}
+.botao-container{
+   margin-bottom: 50px;
+}
+button{
+   cursor: pointer;
+   transition: 100ms;
+}
+button:hover{
+   background-color: rgb(98, 98, 215);
+}
+button:active{
+   background-color: rgb(10, 10, 115)
+}
+
+#aviso{
+   font-size: 15px;
+   margin: 0 0 10px 10px;
+   transition: 200ms;
+}
+
+.mensagem{
+   background-color: rgba(243, 245, 252, 1);
+   border: solid 2px rgb(202, 69, 69);
+   padding: 10px 20px;
+   border-radius: 24px;
+   transition: 300ms;
+   max-width: 380px;
+   min-height: 400px;
+}
+.botao-criptografia{
+   font-size: 15px;
+   display: inline-block;
+   color: white;
+   background-color: rgba(10, 56, 113, 1);
+   border-radius: 24px;
+   margin:10px auto;
+   padding: 20px 40px;
+   gap:8px;
+   border: none;
+   cursor: pointer;
+
+}
+.botao-descriptografia{
+
+   font-size: 15px;
+   display: inline-block;
+   color: rgba(10, 56, 113, 1);
+   background-color: rgba(216, 223, 232, 1);
+   border-radius: 24px;
+   margin: 0 0 0 12px;
+   padding: 20px 40px;
+   border: 1px rgba(10, 56, 113, 1) solid ;
+   cursor: pointer;
+}
+.copiar-texto{
+   font-size: 15px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   color: rgba(10, 56, 113, 1);   
+   background-color: rgba(216, 223, 232, 1);
+   border-radius: 24px;
+   margin: 10px auto;
+   border: 1px rgba(10, 56, 113, 1) solid ;
+   padding: 20px 100px;
+}
+#textEncript{
+   display: flex;
+   align-items: center;
+   justify-content: top;
+}
+footer{
+   bottom: 0;
+   text-align: center;
+   padding: 30px 0;
+   margin: 100px 0 0 0;
+   background: linear-gradient( rgb(224, 232, 255),  rgb(255, 232, 255));
+}

@@ -4,76 +4,60 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="reset.css">
    <link rel="stylesheet" href="style.css">
+   
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+
    <title>Challenge ONE</title>
 </head>
 <body>
-   <input id="textEntrada">
-   <section class="codigo_box">
-      <div class="caixa_mensagem">
-          <p id="textEncript"></p>
-      </div>
-   </section>
-   <button onclick="criptografar()">Criptografar</button>
-   <button onclick="descriptografar()">Descriptografar</button>
+   <header>
+      <nav>
+         <h1>
+            <img class="img-logo" src="imgs/star_steven_universe.jpg">         
+         </h1>
+         <h1 class="titulo-header">Encriptador de Mensagens</h1>
+      </nav>
+   </header>
+
+   <main>
+         
+      <section class="codigo_box">
+            <div class="caixa_mensagem">
+
+               <input id="textEntrada" placeholder="Digite sua mensagem">
+               
+            <div class="botao-container">
+
+               <p id="aviso">&#9888 Apenas letras minúsculas e sem acento</p>
+               <button class="botao-criptografia">Criptografar</button>
+               <button class="botao-descriptografia">Descriptografar</button>
+
+           </div> 
+            </div>
+      </section>
+         
+       <section class="resposta-box">
+
+         <div class="mensagem">
+            <img id="img-semtexto" src="imgs/Nenhum.png">
+            <p id="textEncript"></p>
+            <button class="copiar-texto">Copiar</button>
+         </div>
+
+      </section> 
+
+   </main>
+   <footer>
+      <h1>Desenvolvido por Ítalo Feitosa Pinheiro</h1>
+   </footer>
 </body>
-<script>
-
-   function criptografar(){
-      var textEntrada = document.querySelector("#textEntrada").value;
-      var temp = "";
-      for(var i = 0; i < textEntrada.length; i++){
-          temp += cript(textEntrada[i]);
-          
-      }
-        document.getElementById("textEncript").innerHTML = "";
-        document.getElementById("textEncript").innerHTML = temp;
-   }
-
-      function descriptografar(){
-        var textEntrada = document.querySelector("#textEntrada").value;
-        var temp = "";
-        for(var i = 0; i < textEntrada.length; i++){
-     
-            temp = descript(textEntrada);
-        }
-          document.getElementById("textEncript").innerHTML = "";
-          document.getElementById("textEncript").innerHTML = temp;
-      }
-
-      
-function descript(text){
-            return text
-            .replaceAll("enter", "e")
-            .replaceAll("imes", "i")
-            .replaceAll("ai", "a")
-            .replaceAll("ober", "o")
-            .replaceAll("ufat", "u");
-      }
-
-      function cript(texto){
-            switch(texto){
-               case "e":
-                  return "enter";
-                  break;
-               case "i":
-                  return "imes";
-                  break;
-               case "a":
-                  return "ai";
-                  break;
-               case "o":
-                  return "ober";
-                  break;
-               case "u":
-                  return "ufat";
-                  break;
-               default:
-                  return texto;
-            }
-         }
-            
-   
-
-</script>
+<script type="text/javascript" src="script.js"></script>  
 </html>
